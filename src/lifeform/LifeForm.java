@@ -59,4 +59,8 @@ public abstract class LifeForm {
 	{
 		return attackStrength;
 	}
+	public void updateTime(int time) {
+		
+	}
 }
+
