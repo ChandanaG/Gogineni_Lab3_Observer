@@ -1,7 +1,7 @@
 package lifeform;
 /**
  * Mock class for implementing methods of Life Form class
- * @author chandana
+ * @author chandana gogineni
  *
  */
 public class MockLifeForm extends LifeForm{
@@ -9,41 +9,31 @@ public class MockLifeForm extends LifeForm{
 	int temp2;
 	int currentLifePoints;
 	Human human;
-/*	public void takeHit(int damage) 
-	{
-		int armorPoints = human.getArmorPoints();
-			//if(damage < armorPoints ) 
-			//{
-			//	temp = 0;
-			//}
-			//else 
-				if(damage > armorPoints)
-			{
-				temp = damage - armorPoints;
-			}
-		
-	}*/
-	
+	/**
+	 * The attack method attacks a lifeform, then the life form's 
+	 * takeHit() method is called which will then calculate the 
+	 * current life points based on the recovery rate
+	 */
 	public int Attack(int attackStr) {
 		
-		//human.takeHit(attackStr);
-		//System.out.println("In Attack" + human.takeHit(attackStr));
 		temp = human.takeHit(attackStr);
 		System.out.println(temp);
 		
 		return temp;
 	}
-	
+	/**
+	 * Constructor for MockLifeForm class
+	 * @param name
+	 * @param points
+	 */
 	public MockLifeForm(String name, int points) {
 		super(name, points);
 		human = new Human("Bob", 40, 10);
-		//points =;
-		//System.out.println(points);
-		//currentLifePoints = points;
-		//System.out.println(points);
-		 
+		
 	}
-	
+	/**
+	 * Returns current life points
+	 */
 	public int getCurrentLifePoints() {
 		return currentLifePoints;
 	}

@@ -1,6 +1,9 @@
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 
+import Exceptions.MyNewException;
+import GamePlay.TestSimpleTimer;
+import GamePlay.TestSimpleTimerAsThread;
 import environment.TestCell;
 import environment.TestEnvironment;
 import lifeform.TestAlien;
@@ -18,14 +21,18 @@ import recovery.TestRecoveryNone;
 @RunWith(Suite.class)
 @Suite.SuiteClasses (
 		{
+			TestSimpleTimer.class,
+			TestSimpleTimerAsThread.class,	
+			TestHuman.class,
 			TestLifeForm.class,
+			TestAlien.class,
 			TestCell.class,
 			TestEnvironment.class,
-			TestHuman.class,
-			TestAlien.class,
 			TestRecoveryNone.class,
 			TestRecoveryLinear.class,
-			TestRecoveryFractional.class
+			TestRecoveryFractional.class,
+			MyNewException.class
+			
 		})
 public class AllGameTests {
 

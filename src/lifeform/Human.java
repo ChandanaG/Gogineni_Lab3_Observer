@@ -1,5 +1,9 @@
 package lifeform;
-
+/**
+ * Human() class extends the abstract class LifeForm
+ * @author chandana gogineni
+ *
+ */
 public class Human extends LifeForm{
 	private int armorPoints;
 	private int armorCopy;
@@ -10,18 +14,19 @@ public class Human extends LifeForm{
 	private int lifeCopy;
 	public int remains;
 	MockLifeForm entity;
-	
+	/**
+	 * Human class constrcutor
+	 * @param name
+	 * @param life
+	 * @param armor
+	 */
 	public Human(String name, int life, int armor) 
 	{		
 		super(name, life);
 		armorCopy = armor;
 		attackStrength = 5;
 		lifeCopy = life;
-		System.out.println("Copy" +armorCopy);
-		//life = currentLifePoints;
-		
 		armor = armorPoints;
-		//System.out.println("In constructor" +armor);
 	}
 	/**
 	* @return the default attack strength
@@ -46,14 +51,24 @@ public class Human extends LifeForm{
 			armorPoints = 0;
 		else
 			armorPoints = points;	
-		//System.out.println("In set method" +armorPoints);
 	}
-	
+	/**
+	 * When attack method is called on Human, 
+	 * takeHit method calculates the currentLifePoints 
+	 * based on the damage and the armor points set
+	 */
 	public int takeHit(int damage) 
 	{
-		System.out.println("In takeHit" +lifeCopy + " " +damage);
+		/**
+		 * When currentLifePoints are not 0
+		 */
 		if(lifeCopy != 0)
-		{
+		{	
+			/**
+			 * if the damage is less than or equal to the armor points
+			 * then current life points remains the same otherwise 
+			 * current life points would be subtracted with armorpoints - damage
+			 */
 			if(damage <= armorCopy ) 
 			{
 				temp = 0;
@@ -63,14 +78,9 @@ public class Human extends LifeForm{
 				temp = damage - armorCopy;		
 			}
 		}
-		//remainingLifePoints = currentLifePoints - temp;
+		
 		currentLifePoints = lifeCopy - temp;
-		System.out.println(armorCopy+ " " +temp+ " " +currentLifePoints);
 		return currentLifePoints;
 	}
-	
-	//public int getRemainingLifePoints() {
-		//return remainingLifePoints;
-	//}
 	
 } 

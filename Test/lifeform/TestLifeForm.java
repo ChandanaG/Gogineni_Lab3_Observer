@@ -36,12 +36,19 @@ public class TestLifeForm {
 	public void testForObserverPattern() 
 	{
 		entity = new MockLifeForm("Bob", 40);
+		/**
+		 * Test for the attackStrength set as a passed argument 
+		 */
 		entity.setAttackStrength(7);
 		assertEquals(7, entity.getAttackStrength());
-
+		/**
+		 * Test for default strength of Human
+		 */
 		Human h = new Human("Bob", 40, 10);
 		assertEquals(5, h.getAttackStrength());
-		
+		/**
+		 * Test for default strength of Alien
+		 */
 		Alien a = new Alien("Bob", 40);
 		assertEquals(10, a.getAttackStrength());
 		

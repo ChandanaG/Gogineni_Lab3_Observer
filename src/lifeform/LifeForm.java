@@ -41,20 +41,38 @@ public abstract class LifeForm {
 		*/
 		return currentLifePoints;
 	}
-	
+	/**
+	 * Returns the attackStrength
+	 * @return
+	 */
 	public int getAttackStrength() 
 	{
 		return attackStrength;
 	}
+	/**
+	 * Sets the attackStrength based on the input parameter
+	 * @param strPoints
+	 */
 	public void setAttackStrength(int strPoints)
 	{
 		attackStrength = strPoints;	
 	}
+	/**
+	 * takeHit() takes the damage when a lifeform is attacked
+	 * @param damage
+	 * @return
+	 */
 	public int takeHit(int damage) 
 	{
 		return damage;
 	}
-
+	/**
+	 * Attack() method is called on a lifeform 
+	 * and that lifeform's life depletes based on the 
+	 * attack strength
+	 * @param attackStrength
+	 * @return
+	 */
 	public int Attack(int attackStrength) 
 	{
 		return attackStrength;
