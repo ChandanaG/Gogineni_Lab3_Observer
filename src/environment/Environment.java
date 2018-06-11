@@ -80,11 +80,6 @@ public class Environment {
 			return false;
 		if(cells[r][c] == null)
 			return false;
-		/*if(getLifeForm(r, c) != null)//getLifeForm(r, c) != null
-			return false;*/
 		return cells[r][c].removeLifeForm();
 	}
-	
-	
-
 }

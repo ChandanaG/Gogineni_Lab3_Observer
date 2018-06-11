@@ -8,12 +8,14 @@ import lifeform.LifeForm;
  * @author chandana gogineni
  *
  */
-public class RecoveryNone implements RecoveryBehavior{
+public class RecoveryNone implements RecoveryBehavior
+{
 	RecoveryNone rn;
 	LifeForm lifeform;
 	Alien alien;
 	@Override
-	public int calculateRecovery(int currentLife, int maxLife) {
+	public int calculateRecovery(int currentLife, int maxLife) 
+	{
 		
 		// TODO Auto-generated method stub
 		alien = new Alien("bob", 50);

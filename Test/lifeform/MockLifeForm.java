@@ -4,7 +4,8 @@ package lifeform;
  * @author chandana gogineni
  *
  */
-public class MockLifeForm extends LifeForm{
+public class MockLifeForm extends LifeForm
+{
 	int temp;
 	int temp2;
 	int currentLifePoints;
@@ -14,7 +15,8 @@ public class MockLifeForm extends LifeForm{
 	 * takeHit() method is called which will then calculate the 
 	 * current life points based on the recovery rate
 	 */
-	public int Attack(int attackStr) {
+	public int Attack(int attackStr) 
+	{
 		
 		temp = human.takeHit(attackStr);
 		System.out.println(temp);
@@ -26,7 +28,8 @@ public class MockLifeForm extends LifeForm{
 	 * @param name
 	 * @param points
 	 */
-	public MockLifeForm(String name, int points) {
+	public MockLifeForm(String name, int points) 
+	{
 		super(name, points);
 		human = new Human("Bob", 40, 10);
 		
@@ -34,9 +37,8 @@ public class MockLifeForm extends LifeForm{
 	/**
 	 * Returns current life points
 	 */
-	public int getCurrentLifePoints() {
+	public int getCurrentLifePoints() 
+	{
 		return currentLifePoints;
 	}
-
-	
 }

@@ -8,12 +8,14 @@ import lifeform.Alien;
  * @author chandana gogineni
  *
  */
-public class RecoveryLinear implements RecoveryBehavior{
+public class RecoveryLinear implements RecoveryBehavior
+{
 	int recoveryStep;
 	int max;
 	Alien alien;
 	
-	public RecoveryLinear(int step) {
+	public RecoveryLinear(int step) 
+	{
 		
 		max = step;
 		
@@ -21,7 +23,8 @@ public class RecoveryLinear implements RecoveryBehavior{
 	/**
 	 * Updates the currentLifePoints based on the recovery value calculated
 	 */
-	public int calculateRecovery(int currentLife, int maxLife) {
+	public int calculateRecovery(int currentLife, int maxLife) 
+	{
 		// TODO Auto-generated method stub
 		recoveryStep = currentLife;
 		currentLife += max;

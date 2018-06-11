@@ -22,7 +22,8 @@ public class TestCell {
 	*/
 
 	@Test
-	public void testInitialization() {
+	public void testInitialization() 
+	{
 		Cell cell = new Cell();
 		assertNull(cell.getLifeForm());
 	}
@@ -34,7 +35,8 @@ public class TestCell {
 	*/
 
 	@Test
-	public void testSetLifeForm() {
+	public void testSetLifeForm() 
+	{
 		LifeForm bob = new MockLifeForm("Bob", 40);
 		LifeForm fred = new MockLifeForm("Fred", 40);		
 		Cell cell = new Cell();

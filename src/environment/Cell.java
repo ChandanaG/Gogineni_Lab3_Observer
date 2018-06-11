@@ -17,7 +17,6 @@ public class Cell {
 	 */
 	public boolean addLifeForm(LifeForm life) 
 	{
-		// TODO Auto-generated method stub 
 		
 		if(entity != null)
 			return false;
@@ -31,7 +30,6 @@ public class Cell {
 	*/
 	public LifeForm getLifeForm()
 	{		
-		// TODO Auto-generated constructor stub
 		return entity;
 	}
 	

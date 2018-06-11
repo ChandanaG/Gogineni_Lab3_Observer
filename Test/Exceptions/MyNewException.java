@@ -11,7 +11,8 @@ import lifeform.Alien;
  * @author chandana gogineni
  *
  */
-public class MyNewException {
+public class MyNewException 
+{
 	/**
 	 * Tests for the expected exception
 	 * @throws Exception

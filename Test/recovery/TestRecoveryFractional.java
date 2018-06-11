@@ -8,10 +8,12 @@ import org.junit.Test;
  * @author chandana gogineni
  *
  */
-public class TestRecoveryFractional {
+public class TestRecoveryFractional 
+{
 
 	@Test
-	public void test() {
+	public void test() 
+	{
 		RecoveryFractional rf = new RecoveryFractional(0.1);
 		/**
 		 * Calculates the maximum recovery an alien

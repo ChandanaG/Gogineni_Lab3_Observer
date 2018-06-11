@@ -4,7 +4,8 @@ package lifeform;
  * @author chandana gogineni
  *
  */
-public class Human extends LifeForm{
+public class Human extends LifeForm
+{
 	private int armorPoints;
 	private int armorCopy;
 	private int attackStrength;

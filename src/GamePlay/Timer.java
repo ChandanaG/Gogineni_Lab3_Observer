@@ -7,7 +7,8 @@ package GamePlay;
  * @author chandana gogineni
  *
  */
-public interface Timer {
+public interface Timer 
+{
 	
 	public void addTimeObserver(TimeObserver observer);
 	public void removeTimeObserver(TimeObserver observer); 

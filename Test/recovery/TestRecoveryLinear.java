@@ -6,12 +6,14 @@ import org.junit.Test;
 
 import lifeform.Alien;
 
-public class TestRecoveryLinear {
+public class TestRecoveryLinear 
+{
 	/**
 	 * Tests for recovery by Linear Behavior
 	 */
 	@Test
-	public void Test() {
+	public void Test() 
+	{
 		/**
 		 * Test for recovery to the fullest without hitting max value
 		 */
@@ -30,7 +32,7 @@ public class TestRecoveryLinear {
 		rl= new RecoveryLinear(3);
 		result = rl.calculateRecovery(0, 50);
 		assertEquals(0, result);
-		}
 	}
+}
 
 

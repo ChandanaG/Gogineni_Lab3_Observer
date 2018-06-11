@@ -4,7 +4,8 @@ package lifeform;
 * Keeps track of the information associated with a simple life form.
 * Also provides the functionality related to the life form.
 */
-public abstract class LifeForm {
+public abstract class LifeForm 
+{
 	private String myName;
 	private int currentLifePoints;
 	private int attackStrength;

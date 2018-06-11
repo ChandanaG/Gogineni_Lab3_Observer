@@ -11,7 +11,8 @@ import lifeform.MockLifeForm;
 * The test cases for the Environment class
 *
 */
-public class TestEnvironment {
+public class TestEnvironment 
+{
 	
 	/**
 	* At initialization, the Cell should be empty and not contain a
@@ -19,7 +20,8 @@ public class TestEnvironment {
 	*/
 	
 	@Test
-	public void testInitialiaztion() {
+	public void testInitialiaztion() 
+	{
 		Environment env = new Environment(1, 1);
 		
 		assertNull(env.getCell(0, 0).getLifeForm());		
@@ -31,7 +33,8 @@ public class TestEnvironment {
 	*/
 
 	@Test
-	public void testSetEnvironment() {
+	public void testSetEnvironment() 
+	{
 		Environment env = new Environment(2, 3);
 		LifeForm bob = new MockLifeForm("bob", 40);
 		/**

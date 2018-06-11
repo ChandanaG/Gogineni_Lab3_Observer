@@ -5,7 +5,8 @@ package recovery;
  * @author chandana gogineni
  *
  */
-public interface RecoveryBehavior {
+public interface RecoveryBehavior 
+{
 	public int calculateRecovery(int currentLife, int maxLife);
 
 }

@@ -4,26 +4,31 @@ package recovery;
  * @author chandana gogineni
  *
  */
-public class RecoveryFractional {
+public class RecoveryFractional 
+{
 	double percentRecovery;
-	public RecoveryFractional(double percent) {
+	public RecoveryFractional(double percent) 
+	{
 		percentRecovery = percent;
 	}
 	/**
 	 * Returns the newly updated value for currentLife after calculating recovery
 	 */
-	public int calculateRecovery(int currentLife, int maxLife) {
+	public int calculateRecovery(int currentLife, int maxLife) 
+	{
 		int life = currentLife;
 		currentLife += (currentLife*percentRecovery);
 		/**
 		 * Rounding up the fractional life points
 		 */
-		if(life % 10 != 0 && currentLife <= maxLife) {
+		if(life % 10 != 0 && currentLife <= maxLife) 
+		{
 			
 			int temp = (currentLife % 10);
 			currentLife += (10 - temp);
 		}
-		if(currentLife > maxLife) {
+		if(currentLife > maxLife) 
+		{
 			currentLife = maxLife;
 		}
 		return currentLife;

@@ -24,6 +24,7 @@ public class SimpleTimer extends Thread implements Timer
 		time = i;
 		
 	}
+	
 	/**
 	 * Simple Timer method using Threads
 	 */
@@ -47,7 +48,8 @@ public class SimpleTimer extends Thread implements Timer
 	 * Adds an observer to the List
 	 */
 	@Override
-	public void addTimeObserver(TimeObserver observer) {
+	public void addTimeObserver(TimeObserver observer) 
+	{
 		theObservers.add(observer);
 		
 	}
@@ -56,37 +58,45 @@ public class SimpleTimer extends Thread implements Timer
 	 * Removes an observer from the list when list is not empty
 	 */
 	@Override
-	public void removeTimeObserver(TimeObserver observer) {
+	public void removeTimeObserver(TimeObserver observer) 
+	{
 		theObservers.remove(observer);
 		 
 	}
-	public void updateTime(int time) {
+	
+	public void updateTime(int time) 
+	{
 		time = this.time;
 	}
+	
 	/**
 	 * Increments round and calls updateTime() method of all observers
 	 */
 	@Override
-	public void timeChanged() {
-		for(TimeObserver to : theObservers) {
+	public void timeChanged() 
+	{
+		for(TimeObserver to : theObservers) 
+		{
 				round++;
 				to.updateTime(time);
 			
-		}
-		
+		}	
 	}
+	
 	/**
 	 * Returns the current round the game is in
 	 * @return
 	 */
-	public int getRound() {
+	public int getRound() 
+	{
 		return round;
 	}
 	/**
 	 * Returns the list of observers
 	 * @return
 	 */
-	public List<TimeObserver> getTheObservers(){
+	public List<TimeObserver> getTheObservers()
+	{
 		return theObservers;
 	}
 }
