@@ -16,17 +16,6 @@ public class TestAlien
 	Alien alien;
 	
 	/**
-	 * Start section for Strategy pattern
-	 */
-	@Test
-	public void testInitialization() 
-	{
-		alien = new Alien("Bob", 40);
-		assertEquals("Bob", alien.getName());
-		assertEquals(40, alien.getCurrentLifePoints());			
-	}
-	
-	/**
 	 * Start section for Observer pattern
 	 * @throws Exception 
 	 */
@@ -56,4 +45,15 @@ public class TestAlien
 		assertEquals(30, alien.getCurrentLifePoints());
 	}
 
+	/**
+	 * Start section for Strategy pattern
+	 */
+	@Test
+	public void testInitialization() 
+	{
+		alien = new Alien("Bob", 40);
+		assertEquals("Bob", alien.getName());
+		assertEquals(40, alien.getCurrentLifePoints());			
+	}
+	
 }

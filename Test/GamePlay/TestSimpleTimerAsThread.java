@@ -15,7 +15,8 @@ public class TestSimpleTimerAsThread extends Thread
 	SimpleTimer st;
 	@Test
 	/**
-	* This tests that SimpleTimer will * every second. update time once */
+	* This tests that SimpleTimer will * every second. update time once 
+	*/
 	public void testSimpleTimerAsThread() throws InterruptedException
 	{ 
 		st = new SimpleTimer(1000); 

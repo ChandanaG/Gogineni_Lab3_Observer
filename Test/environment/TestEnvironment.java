@@ -34,13 +34,19 @@ public class TestEnvironment {
 	public void testSetEnvironment() {
 		Environment env = new Environment(2, 3);
 		LifeForm bob = new MockLifeForm("bob", 40);
-		//To add LifeForm at the cell[1][2] if it's not empty
+		/**
+		 * To add LifeForm at the cell[1][2] if it's not empty
+		 */
 		env.addLifeForm(1, 2, bob);
 		assertEquals(bob, env.getLifeForm(1, 2));
-		//Removes LifeForm at the cell[1][2] unless it's already empty
+		/**
+		 * Removes LifeForm at the cell[1][2] unless it's already empty
+		 */
 		env.removeLifeForm(1, 2);
 		assertNull(env.getLifeForm(1, 2));
-		//Asserts if the given indices are invalid for a cell
+		/**
+		 * Asserts if the given indices are invalid for a cell
+		 */
 		boolean success = env.addLifeForm(4, 5, bob);
 		assertFalse(success);
 		success = env.removeLifeForm(4, 5);

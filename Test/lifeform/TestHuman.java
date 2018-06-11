@@ -13,20 +13,6 @@ public class TestHuman
 {
 	MockLifeForm entity;
 	Human human; 
-	/**
-	 * Start section for Strategy pattern
-	 */
-	@Test
-	public void testInitialization() 
-	{
-		
-		human = new Human("Bob", 40, 10);
-		assertEquals("Bob", human.getName());
-		assertEquals(40, human.getCurrentLifePoints());
-		human.setArmorPoints(-1);
-		assertEquals(0, human.getArmorPoints());
-		
-	}
 	
 	/**
 	 * Start section for Observer pattern
@@ -57,5 +43,19 @@ public class TestHuman
 		assertEquals(0, human.getCurrentLifePoints());
 	}
 	
+	/**
+	 * Start section for Strategy pattern
+	 */
+	@Test
+	public void testInitialization() 
+	{
+		
+		human = new Human("Bob", 40, 10);
+		assertEquals("Bob", human.getName());
+		assertEquals(40, human.getCurrentLifePoints());
+		human.setArmorPoints(-1);
+		assertEquals(0, human.getArmorPoints());
+		
+	}
 
 }

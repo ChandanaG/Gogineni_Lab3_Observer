@@ -11,21 +11,6 @@ import org.junit.Test;
 */
 
 public class TestLifeForm {
-	/**
-	* Start section for Strategy pattern 
-	* When a LifeForm is created, it should know its name and how
-	* many life points it has.
-	*/
-	LifeForm entity;
-	
-	@Test
-	public void testInitialization() 
-	{	
-		entity = new MockLifeForm("Bob", 40);
-		assertEquals("Bob", entity.getName());
-		assertEquals(40, entity.getCurrentLifePoints());	
-		
-	}
 	
 	/**
 	 * 
@@ -54,6 +39,21 @@ public class TestLifeForm {
 		
 	}
 	
+	/**
+	* Start section for Strategy pattern 
+	* When a LifeForm is created, it should know its name and how
+	* many life points it has.
+	*/
+	LifeForm entity;
+	
+	@Test
+	public void testInitialization() 
+	{	
+		entity = new MockLifeForm("Bob", 40);
+		assertEquals("Bob", entity.getName());
+		assertEquals(40, entity.getCurrentLifePoints());	
+		
+	}
 	
 	public static void main(String[] argc)
 	{
